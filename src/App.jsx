@@ -7,15 +7,18 @@ import Experiences from './diftexts/Experiences'
 import News from './diftexts/News'
 import Villas from './diftexts/Villas'
 import Vinha from './diftexts/Vinha'
-import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Login from './login/Login.jsx';
+import Signup from './login/Signup.jsx';
+
 
 function App() {
   return (
     <div>
-            <Home></Home>
-        <main class="main">
-            <NavBar></NavBar>
             <Router>
+            <Home></Home>
+        <main className="main">
+            <NavBar></NavBar>
                <Routes>
                     <Route path="/About" element={<About />} ></Route>
                     <Route path="/Boaventura" element={<Boaventura />} ></Route>
@@ -23,9 +26,11 @@ function App() {
                     <Route path="/News" element={<News />} ></Route>
                     <Route path="/Villas" element={<Villas />} ></Route>
                     <Route path="/Vinha" element={<Vinha />} ></Route>
+                    <Route path="/Login" element={<Login />} ></Route>
+                    <Route path="/Signup" element={<Signup />} ></Route>
                 </Routes>     
-            </Router>     
         </main>
+            </Router>     
     </div>
   );
 }

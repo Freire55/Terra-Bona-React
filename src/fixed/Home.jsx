@@ -1,39 +1,41 @@
 import './Home.css'
+import {BrowserRouter as Router, Link} from 'react-router-dom'
 
 function Home() {
     return (
         <>
-             <div class="nav-bar">
+             <div className="nav-bar">
           <img
-          class="logo"
+          className="logo"
           src="terra_bona_logo-removebg-preview.png"
           alt="Terra Bona Logo"
           />
-          <div class="langs">
-              <a class="lang" href="indexpt.html"> Português </a>
-              <a class="lang" href="indexpt.html"> English </a>
-              <a class="lang" href="indexpt.html"> Français </a>
+          <div className="langs">
+              <a className="lang" href="indexpt.html"> Português </a>
+              <a className="lang" href="indexpt.html"> English </a>
+              <a className="lang" href="indexpt.html"> Français </a>
             </div>
-            <div class="sign-up">
-                <form action="./loginpt.html" target="_blank">
-                    <button class="login">
+            <div className="sign-up">
+                <Link to="/Login" target="_blank">
+                    <button className="login">
                         Login
                     </button>
-                </form>
-                <form action="./signuppt.html" target="_blank">
-                    <button class="login">
+                </Link>
+                <Link to="/Signup" target="_blank">
+                    <button className="login">
                         Registar
                     </button>
-                </form>
+                </Link>
             </div>
         </div>
-            <div class="view-img">
-                <div class="parag">
-                    <p class="read-more">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit necessitatibus quaerat quasi temporibus id, eius aliquam, explicabo, ullam laudantium dolorem nam eligendi minima reprehenderit blanditiis molestias. Ut molestiae exercitationem maiores!</p>
-                    <p class="read-more">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique veritatis molestiae nemo incidunt odio dolores placeat possimus fugiat, corporis officiis.</p>
-                    <p class="read-more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda.</p>
+            <div className="view-img">
+                <div className="parag">
+                    <p className="read-more">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit necessitatibus quaerat quasi temporibus id, eius aliquam, explicabo, ullam laudantium dolorem nam eligendi minima reprehenderit blanditiis molestias. Ut molestiae exercitationem maiores!</p>
+                    <p className="read-more">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique veritatis molestiae nemo incidunt odio dolores placeat possimus fugiat, corporis officiis.</p>
+                    <p className="read-more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda.</p>
                 </div>
             </div>
+
         </>
     )
 }

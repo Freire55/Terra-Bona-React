@@ -1,27 +1,28 @@
 import './NavBar.css'
+import {Link} from 'react-router-dom'
 
 function NavBar() {
     return (
         <>
-            <div class="topics">
-                <a href="/About">
-                    <button class="links">Sobre Nós</button>
-                </a>
-                <a href="/Vinha">
-                    <button class="links">A Vinha</button>
-                </a>
-                <a href="/Villas">
-                    <button class="links">Villas</button>
-                </a>
-                <a href="/Experiences">
-                    <button class="links">Experiências</button>
-                </a>
-                <a href="/Boaventura">
-                    <button class="links">A Boaventura</button>
-                </a>
-                <a href="/News">
-                    <button class="links">Notícias</button>
-                </a>
+            <div className="topics">
+                <Link to="/About">
+                    <button className="links">Sobre Nós</button>
+                </Link>
+                <Link to="/Vinha">
+                    <button className="links">A Vinha</button>
+                </Link>
+                <Link to="/Villas">
+                    <button className="links">Villas</button>
+                </Link>
+                <Link to="/Experiences">
+                    <button className="links">Experiências</button>
+                </Link>
+                <Link to="/Boaventura">
+                    <button className="links">A Boaventura</button>
+                </Link>
+                <Link to="/News">
+                    <button className="links">Notícias</button>
+                </Link>
             </div>
         </>
     )
