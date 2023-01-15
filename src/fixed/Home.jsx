@@ -1,5 +1,7 @@
 import './Home.css'
 import {BrowserRouter as Router, Link} from 'react-router-dom'
+import Logo from './terra_bona_logo-removebg-preview.png'
+
 
 function Home() {
     return (
@@ -7,7 +9,7 @@ function Home() {
              <div className="nav-bar">
           <img
           className="logo"
-          src="terra_bona_logo-removebg-preview.png"
+          src={Logo}
           alt="Terra Bona Logo"
           />
           <div className="langs">
