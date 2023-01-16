@@ -1,8 +1,10 @@
 import './Login.css'
+import Wave from './svgwave'
 
 function Login() {
     return (
         <>
+            <div className='background'><Wave></Wave></div>
             <div className="container">
                 <form className="form card">
                     <div className="card_header">

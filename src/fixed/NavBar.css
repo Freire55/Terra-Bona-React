@@ -28,6 +28,7 @@
   }
   
   .links:hover {
+    background-color: #889772;
     color: #1e1e2b;
     transition-delay: .3s;
   }
