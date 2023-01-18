@@ -12,6 +12,7 @@ import Login from './login/Login.jsx';
 import Signup from './login/Signup.jsx';
 
 
+
 function App() {
   return (
     <div>
@@ -20,7 +21,7 @@ function App() {
         <main className="main">
             <NavBar></NavBar>
                <Routes>
-                    <Route path="/About" element={<About />} ></Route>
+                    <Route path="/" element={<About />} ></Route>
                     <Route path="/Boaventura" element={<Boaventura />} ></Route>
                     <Route path="/Experiences" element={<Experiences />} ></Route>
                     <Route path="/News" element={<News />} ></Route>

@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <>
             <div className="topics">
-                <Link to="/About">
+                <Link to="/">
                     <button className="links">Sobre Nós</button>
                 </Link>
                 <Link to="/Vinha">
