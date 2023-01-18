@@ -10,6 +10,7 @@ import Vinha from './diftexts/Vinha'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Login from './login/Login.jsx';
 import Signup from './login/Signup.jsx';
+import Footer from './fixed/Footer.jsx';
 
 
 
@@ -32,6 +33,7 @@ function App() {
                 </Routes>     
         </main>
             </Router>     
+            <Footer></Footer>
     </div>
   );
 }

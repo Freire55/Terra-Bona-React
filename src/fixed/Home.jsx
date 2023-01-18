@@ -1,11 +1,10 @@
 import './Home.css'
 import {Link} from 'react-router-dom'
 import LogoImg from './LogoImg.jsx'
-import App from '../App.jsx'
-import Login from '../login/Login.jsx'
 
 
-function Home() {
+function Home() {   
+
     return (
         <>
              <div className="nav-bar container-fluid">
@@ -13,19 +12,19 @@ function Home() {
                     <div className="col-sm-4">
           <LogoImg />
           </div>
-          <div className="langs col-sm-4">
+          <div className="langs col-sm-4 no-img">
               <a className="lang" href="indexpt.html"> Português </a>
               <a className="lang" href="indexpt.html"> English </a>
               <a className="lang" href="indexpt.html"> Français </a>
             </div>
-            <div className="sign-up col-sm-3">
+            <div className="sign-up col-sm-3 no-img">
                 <Link to="/Login" target="_blank">
-                    <button className="login box">
+                    <button className="login box" id="show-login">
                         Login
                     </button>
                 </Link>
                 <Link to="/Signup" target="_blank">
-                    <button className="login box">
+                    <button className="login box" id="show-signup">
                         Registar
                     </button>
                 </Link>

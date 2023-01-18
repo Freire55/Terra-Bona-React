@@ -1,0 +1,108 @@
+.get-in-touch {
+    max-width: 80%;
+    margin: 50px auto;
+    position: relative;
+    left: 5em;
+    overflow-x: hidden;
+  }
+  .get-in-touch .title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3.2em;
+    line-height: 48px;
+    padding-bottom: 48px;
+       color: #5543ca;
+      background: #ca43a4;
+      background: -moz-linear-gradient(left,#55f44d  0%,#5543ca 100%) ;
+      background: -webkit-linear-gradient(left,#55f44d  0%,#5543ca 100%) ;
+      background: linear-gradient(to right,#55f44d  0%,#5543ca  100%) ;
+      -webkit-background-clip: text ;
+      -webkit-text-fill-color: transparent ;
+  }
+  
+  .contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+  }
+  .contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 3em;
+    border-width: 0 0 2px 0;
+    border-color: #43ca75;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-left: 1em;
+    padding-top: 1.5em;
+  }
+  .contact-form .input-text:focus {
+    outline: none;
+  }
+  .contact-form .input-text:focus + .label,
+  .contact-form .input-text.not-empty + .label {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+  }
+  .contact-form .label {
+    position: absolute;
+    left: 1.3em;
+    bottom: 1.4em;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #4380cafc;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, 
+    -webkit-transform .2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+     background-image: linear-gradient(125deg,#a72879,#064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width:200px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .submit {
+    border: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    background: transparent;
+    color: #006bb3;
+    border: solid 1px rgba(0, 107, 179, 0.2);
+    padding: 1.5em 2em;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+   }
+   
+   .submit:before {
+    content: "»";
+    opacity: 0;
+    margin-left: -15px;
+    transition-duration: 0.2s;
+   }
+   
+   .submit:hover:before {
+    margin-left: 0px;
+    opacity: 1;
+   }
+   
+   .submit:hover {
+    color: rgba(0, 0, 0, 0.833);
+    background: -moz-linear-gradient(left,#55f44d  0%,#4377ca 100%) ;
+    background: -webkit-linear-gradient(left,#55f44d  0%,#4377ca 100%) ;
+    background: linear-gradient(to right,#55f44d  0%,#4377ca  100%) ;
+    border: solid 1px gainsboro;
+   }
