@@ -5,6 +5,7 @@
     left: 5em;
     overflow-x: hidden;
   }
+  
   .get-in-touch .title {
     text-align: center;
     text-transform: uppercase;
@@ -17,6 +18,7 @@
       background: -moz-linear-gradient(left,#55f44d  0%,#5543ca 100%) ;
       background: -webkit-linear-gradient(left,#55f44d  0%,#5543ca 100%) ;
       background: linear-gradient(to right,#55f44d  0%,#5543ca  100%) ;
+      background-clip: text;
       -webkit-background-clip: text ;
       -webkit-text-fill-color: transparent ;
   }
@@ -24,6 +26,7 @@
   .contact-form .form-field {
     position: relative;
     margin: 32px 0;
+
   }
   .contact-form .input-text {
     display: block;
@@ -37,9 +40,11 @@
     padding-left: 1em;
     padding-top: 1.5em;
   }
+
   .contact-form .input-text:focus {
     outline: none;
   }
+
   .contact-form .input-text:focus + .label,
   .contact-form .input-text.not-empty + .label {
     -webkit-transform: translateY(-24px);
@@ -59,6 +64,7 @@
     transition: transform .2s ease-in-out, 
     -webkit-transform .2s ease-in-out;
   }
+
   .contact-form .submit-btn {
     display: inline-block;
     background-color: #000;
@@ -72,8 +78,7 @@
     width:200px;
     cursor: pointer;
   }
-  
-  
+
   
   .submit {
     border: none;
@@ -105,4 +110,8 @@
     background: -webkit-linear-gradient(left,#55f44d  0%,#4377ca 100%) ;
     background: linear-gradient(to right,#55f44d  0%,#4377ca  100%) ;
     border: solid 1px gainsboro;
+   }
+
+   .get-in-touch p {
+    color: #006bb3;
    }
