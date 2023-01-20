@@ -1,11 +1,19 @@
 import './Home.css'
 import {Link} from 'react-router-dom'
 import LogoImg from './LogoImg.jsx'
+import {useState} from 'react'
+import Login from '../login/Login'
 
+function Home(appprops) {   
 
-function Home() {   
+    const [disable, setDisable] = useState(true)
+    function ChangeDisable() {
+        setDisable(!disable)
+    }
+    
 
     return (
+        disable ?(
         <>
              <div className="nav-bar container-fluid">
                 <div className="row">
@@ -18,11 +26,11 @@ function Home() {
               <a className="lang" href="indexpt.html"> Français </a>
             </div>
             <div className="sign-up col-sm-3 no-img">
-                <Link to="/Login" target="_blank">
-                    <button className="login box" id="show-login">
+                {/* <Link to="/Login" target="_blank"> */}
+                    <button onClick={() => {appprops.removeBody(); ChangeDisable()}} className="login box" id="show-login">
                         Login
                     </button>
-                </Link>
+                {/* </Link> */}
                 <Link to="/Signup" target="_blank">
                     <button className="login box" id="show-signup">
                         Registar
@@ -46,6 +54,9 @@ function Home() {
             </div>
 
         </>
+        ) : (
+            <Login showLogin={ChangeDisable}></Login>
+        )
     )
 }
 

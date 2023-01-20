@@ -11,15 +11,26 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Login from './login/Login.jsx';
 import Signup from './login/Signup.jsx';
 import Footer from './fixed/Footer.jsx';
-
+import { useState } from "react";
 
 
 function App() {
+
+  const [disp, setDisp] = useState('block')
+
+  function OnlyLogin(appprops) {
+    setDisp('none')
+}
+
+// function NoLogin(appprops) {
+//     setDisp('block')
+// }
+
   return (
     <div>
             <Router>
-            <Home></Home>
-        <main className="main">
+            <Home removeBody={OnlyLogin}></Home>
+        <main className="main" style={{display: disp}}>
             <NavBar></NavBar>
                <Routes>
                     <Route path="/" element={<About />} ></Route>
@@ -31,9 +42,9 @@ function App() {
                     <Route path="/Login" element={<Login />} ></Route>
                     <Route path="/Signup" element={<Signup />} ></Route>
                 </Routes>     
+            <Footer></Footer>
         </main>
             </Router>     
-            <Footer></Footer>
     </div>
   );
 }

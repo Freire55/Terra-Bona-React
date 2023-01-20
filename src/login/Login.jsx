@@ -1,6 +1,6 @@
 import './Login.css'
 
-function Login() {
+function Login(props) {
     return (
         <>
             <div className="container">
@@ -26,7 +26,7 @@ function Login() {
                     </div>
                         <p>Ainda não tem conta? <a href="signuppt.html">Registe-se</a></p>
                     <div className="field">
-                        <button className="button">Login</button>
+                        <button onClick={() => props.showLogin} className="button">Login</button>
                     </div>
                 </form>
             </div>
