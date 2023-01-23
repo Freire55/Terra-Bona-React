@@ -1,6 +1,8 @@
 import './Login.css'
 
+
 function Login(props) {
+
     return (
         <>
             <div className="container">
@@ -13,20 +15,20 @@ function Login(props) {
                     <h1 className="form_heading">Fazer Login</h1>
                     </div>
                     <div className="field">
-                        <label for="username">Nome de Usuário</label>
+                        <label htmlFor="username">Nome de Usuário</label>
                         <input required id="username" placeholder="Nome de Usuário" type="text" name="username" className="input" />
                     </div>
                     <div className="field">
-                        <label for="email">Email</label>
-                        <input required id="email" placeholder="example@gmail.com" type="email" name="username" className="input" />
+                        <label htmlFor="email2">Email</label>
+                        <input required id="email2" placeholder="example@gmail.com" type="email" name="username" className="input" />
                     </div>
                     <div className="field">
-                        <label for="password">Password</label>
+                        <label htmlFor="password">Password</label>
                         <input required id="password" placeholder="Password" type="password" name="user_password" className="input" />
                     </div>
-                        <p>Ainda não tem conta? <a href="signuppt.html">Registe-se</a></p>
+                        <p>Ainda não tem conta? <a className="link" onClick={null}>Registe-se</a></p>
                     <div className="field">
-                        <button onClick={() => props.showLogin} className="button">Login</button>
+                        <button onClick={() => props.showLogin} type='submit' className="button">Login</button>
                     </div>
                 </form>
             </div>

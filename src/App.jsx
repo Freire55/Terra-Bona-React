@@ -12,7 +12,7 @@ import Login from './login/Login.jsx';
 import Signup from './login/Signup.jsx';
 import Footer from './fixed/Footer.jsx';
 import { useState } from "react";
-
+import './login/Login.css'
 
 function App() {
 

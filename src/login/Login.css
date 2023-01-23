@@ -76,3 +76,7 @@ a {
   text-decoration: none;
   color: #46414E;
 }
+
+.link:hover {
+  cursor: pointer;
+}

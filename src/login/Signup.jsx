@@ -2,7 +2,7 @@ import './Signup.css'
 
 function Signup() {
     return (
-        <>
+            <>
             <div className="container">
                 <form className="form card">
                     <div className="card_header">
@@ -26,9 +26,9 @@ function Signup() {
                     </div>
                     <div className="field">
                         <label for="username">Idade*</label>
-                        <input required id="username" placeholder="Idade" type="number" name="Age" className="input" />
+                        <input required id="age" placeholder="Idade" type="number" name="Age" className="input" />
                     </div>
-                    <p>Já tem conta? Então <a href="./loginpt.html">Faça Login</a></p>
+                    <p>Já tem conta? Então <a class="link" onClick={null}>Faça Login</a></p>
                     <div className="field">
                     <button className="button">Registar</button>
                     </div>
